@@ -4,7 +4,7 @@
 #
 Name     : R-WikidataR
 Version  : 1.4.0
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/WikidataR_1.4.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/WikidataR_1.4.0.tar.gz
 Summary  : API Client Library for 'Wikidata'
