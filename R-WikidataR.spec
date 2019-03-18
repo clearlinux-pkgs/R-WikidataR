@@ -4,16 +4,12 @@
 #
 Name     : R-WikidataR
 Version  : 1.4.0
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/WikidataR_1.4.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/WikidataR_1.4.0.tar.gz
 Summary  : API Client Library for 'Wikidata'
 Group    : Development/Tools
 License  : MIT
-Requires: R-WikipediR
-Requires: R-cli
-Requires: R-httr
-Requires: R-jsonlite
 BuildRequires : R-WikipediR
 BuildRequires : R-cli
 BuildRequires : R-httr
@@ -36,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552837817
+export SOURCE_DATE_EPOCH=1552918999
 
 %install
-export SOURCE_DATE_EPOCH=1552837817
+export SOURCE_DATE_EPOCH=1552918999
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
