@@ -4,7 +4,7 @@
 #
 Name     : R-WikidataR
 Version  : 1.4.0
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/WikidataR_1.4.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/WikidataR_1.4.0.tar.gz
 Summary  : API Client Library for 'Wikidata'
@@ -23,21 +23,22 @@ semantic data.
 
 %prep
 %setup -q -c -n WikidataR
+cd %{_builddir}/WikidataR
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569386104
+export SOURCE_DATE_EPOCH=1589770064
 
 %install
-export SOURCE_DATE_EPOCH=1569386104
+export SOURCE_DATE_EPOCH=1589770064
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
