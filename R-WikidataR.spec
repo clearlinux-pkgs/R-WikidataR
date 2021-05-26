@@ -4,13 +4,14 @@
 #
 Name     : R-WikidataR
 Version  : 2.1.5
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/WikidataR_2.1.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/WikidataR_2.1.5.tar.gz
 Summary  : Read-Write API Client Library for 'Wikidata'
 Group    : Development/Tools
 License  : MIT
 Requires: R-Hmisc
+Requires: R-WikidataQueryServiceR
 Requires: R-WikipediR
 Requires: R-dplyr
 Requires: R-httr
@@ -45,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622045508
+export SOURCE_DATE_EPOCH=1622048053
 
 %install
-export SOURCE_DATE_EPOCH=1622045508
+export SOURCE_DATE_EPOCH=1622048053
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
