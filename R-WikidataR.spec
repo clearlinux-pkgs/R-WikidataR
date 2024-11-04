@@ -4,7 +4,7 @@
 #
 Name     : R-WikidataR
 Version  : 2.3.3
-Release  : 45
+Release  : 46
 URL      : https://cran.r-project.org/src/contrib/WikidataR_2.3.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/WikidataR_2.3.3.tar.gz
 Summary  : Read-Write API Client Library for Wikidata
